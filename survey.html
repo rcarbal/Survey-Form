@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PC Components Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 id="title">PC Component Survey</h1>
+    <div id="main">
+        <h4 id="description">Let us know what type of computer and componenets matter to you.</h3>
+            <form id="survey-form">
+                <!--   Name Field -->
+
+                <label for="name" id="name-label">*Name: </label>
+
+                <input type="text" id="name" placeholder="Enter your name" required class="user-input">
+
+
+                <!--   Email Field -->
+
+                <label for="email" id="email-label">*Email: </label>
+                <input type="email" id="email" placeholder="Enter your email" required class="user-input">
+
+
+                <!--   Number -->
+
+                <label for="number" id="number-label">*Number:</label>
+                <input type="number" id="number" placeholder="Enter your phone number" expected="tel" min=10 max=10
+                    class="user-input">
+
+
+                <!--   Dropdown Menu -->
+                <label for="dropdown" id="computer-label">
+                    What kind of computer do you prefer?
+                </label>
+                <select id="dropdown" name="dropdown">
+                    <option>Desktop</option>
+                    <option>Laptop</option>
+                    <option>Two in Ones</option>
+                </select>
+
+                <!--  Radio Buttons -->
+
+                <label for="system" id="system-label">What is your favorite Operating system? </label>
+                <div>
+                    <input type="radio" name="system" value="windows"> Windows <br>
+                    <input type="radio" name="system" value="macos">MacOS <br>
+                    <input type="radio" name="system" value="linux">Linux <br>
+                </div>
+
+
+
+
+
+                <!--   Check box area -->
+
+                <label for="component" id="component-label">What are the most important hardware component to you?
+                </label>
+                <div>
+                    <input type="checkbox" name="component" value="cpu">CPU<br>
+                    <input type="checkbox" name="component" value="gpu">GPU<br>
+                    <input type="checkbox" name="component" value="ram">RAM"<br>
+                    <input type="checkbox" name="component" value="storage">Storage
+                </div>
+
+
+                <!-- Text area for comments -->
+
+                <label for="comment" id="comment-label"></labels>Any comments</label>
+                <textarea placeholder="comments" name="comment" class="user-input" id="comments"></textarea>
+
+                <input type="submit" value="Submit" id="submit">
+            </form>
+    </div>
+
+</body>
+
+</html>
